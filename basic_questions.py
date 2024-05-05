@@ -199,6 +199,7 @@ def questions(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sam
                 console.print(Text(f"If you proceed, {machines_to_remove} games will be removed.\n", style=styles.info))
             elif response == 'n':
                 console.print("Ok\n", style=styles.success)
+                break
             else:
                 if samples_folder != "none":
                     sample_files = os.listdir(samples_folder)
